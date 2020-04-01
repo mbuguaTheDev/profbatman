@@ -38,7 +38,7 @@ blog sidebar
     default CSS
 ---------------------------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Roboto:400,500,700 |Orbitron:400,500,700|Economica:400,700' );
 
 html,
 body {
@@ -49,7 +49,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Economica', sans-serif;
     font-weight: 400;
     color: #131947;
     position: relative;
@@ -98,6 +98,7 @@ h6,
 .h1,
 .h2,
 .h3 {
+    font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     margin-top: 0
 }
@@ -128,9 +129,9 @@ h5 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 26px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Economica', sans-serif;
     color: rgba(19, 25, 71, 0.7);
     font-weight: 500
 }
@@ -309,7 +310,7 @@ p {
 }
 
 .navbar-nav .nav-link {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
     color: #fff;
     padding: 0 12px;
@@ -377,7 +378,7 @@ p {
 }
 
 #header.sticky.style-three {
-    background-color: #222629;
+    background-color: #141636;
     -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.08)
 }
@@ -515,7 +516,7 @@ p {
 
 .hero-down-icons a:hover,
 .hero-content.dark h1 span {
-    color: #11aff1;
+    color: #ffd700;
 }
 
 .hero-image.dark {
@@ -525,7 +526,7 @@ p {
 }
 
 .hero-btns.two.dark a.bg {
-    background-color: #11aff1;
+    background-color: #ffd700;
     background-image: none;
 }
 
@@ -545,7 +546,7 @@ p {
 
 .hero-btns.two.dark .circle i {
     background: #fff;
-    color: #11aff1;
+    color: #ffd700;
 }
 
 .hero-btns.two.dark .circle {
@@ -580,7 +581,7 @@ p {
 }
 
 .hero-btns.two.dark .circle:hover i {
-    background-color: #11aff1;
+    background-color: #ffd700;
     color: #fff
 }
 
@@ -621,7 +622,7 @@ p {
 
 #download-info-area {
     padding: 50px 0;
-    background-color: #383e40;
+    background-color: #636162;
 }
 
 .download-info-single.dark h2,
@@ -631,7 +632,7 @@ p {
 
 .hero-btns.two.dark .circle:hover,
 .download-info-single.dark i {
-    color: #11aff1;
+    color: #ffd700;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -824,8 +825,9 @@ p {
 
 .features-single.v3 .icon i,
 .features-single.v3 .feature-link.active i {
-    color: #11aff1
+    color: #141636
 }
+
 
 .features-single .icon i {
     font-size: 30px;
@@ -868,7 +870,7 @@ p {
 
 .features-single.v3 .feature-link.active,
 .features-single.v3:hover .feature-link {
-    background-color: #11aef1
+    background-color: #ffd700
 }
 
 .features-single .feature-link h4 {
@@ -883,7 +885,7 @@ p {
 .features-single:hover p,
 .features-single.v2 h4,
 .features-single.v2 p {
-    color: #fff !important
+    color: #000 !important
 }
 
 .features-single.v2 .feature-link.active,
@@ -961,6 +963,255 @@ p {
     background: #12aded;
 }
 
+
+/*-------------------------------------------------------------------------------------
+    Bat confidential area
+---------------------------------------------------------------------------------------*/
+.batservices-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.batservices-card .container {
+    padding: 10px 16px;
+    background-color: rgba(46, 46, 46, 0.4);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.batservices-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.batservices-card ul {
+    list-style-type: circle;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.batconfidential-card .container {
+    padding: 10px 16px;
+    background-color: rgba(46, 46, 46, 0.4);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.batconfidential-card .container h4 {
+    color: #ffd700;
+}
+
+
+#batconfidential-area {
+    padding: 115px 0 125px;
+}
+
+#batconfidential-area.bg {
+    background-color:#636162;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain
+}
+
+#batconfidential-area.bg-1 {
+    background-image: url(../images/feature-bg-1.jpg);
+    padding-bottom: 70px
+}
+
+#batconfidential-area.bg-2 {
+    background-color:#636162;
+    padding-bottom: 70px
+}
+
+.feature-screen {
+    position: relative;
+    margin: 54px 0 0
+}
+
+.feature-frame {
+    background-image: url(../images/app-frame.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 335px;
+    height: 640px;
+    position: absolute;
+    top: -60px;
+    left: calc(50% + 0.5px);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 99
+}
+
+.feat-screen-single {
+    padding: 10px 40px;
+}
+
+.fbatconfidential-single {
+    margin: 0 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s
+}
+
+.batconfidential-single .icon {
+    width: 20%;
+    float: left;
+    padding: 10px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.batconfidential-single:hover .icon i,
+.batconfidential-single .feature-link.active i,
+.batconfidential-single.v2 .icon i {
+    color: #3647ce
+}
+
+.batconfidential-single.v3 .icon i,
+.batconfidential-single.v3 .feature-link.active i {
+    color: #383838
+}
+
+
+.batconfidential-single .icon i {
+    font-size: 30px;
+    color: #fff;
+    line-height: 65px;
+    text-align: center;
+    background-image: url(../images/icons/feat-icon-bg-1.png);
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.batconfidential-single:hover i,
+.batconfidential-single .feature-link.active i {
+    background-image: url(../images/icons/feat-icon-bg.png);
+}
+
+.batconfidential-single.v2 .icon i,
+.batconfidential-single.v3 .icon i {
+    background-image: url(../images/icons/feat-icon-bg.png);
+}
+
+.batconfidential-single .content {
+    width: 80%;
+    align-items: center;
+}
+
+.batconfidential-single .feature-link {
+    padding: 25px 30px 10px;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden
+}
+
+.batconfidential-single .feature-link.active,
+.batconfidential-single:hover .feature-link {
+    background-color: #3648cf
+}
+
+.batconfidential-single.v3 .feature-link.active,
+.batconfidential-single.v3:hover .feature-link {
+    background-color: #ffd700
+}
+
+.batconfidential-single .feature-link h4 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.batconfidential-single .feature-link.active h4,
+.batconfidential-single .feature-link.active p,
+.batconfidential-single:hover h4,
+.batconfidential-single:hover p,
+.batconfidential-single.v2 h4,
+.batconfidential-single.v2 p {
+    color: #000 !important
+}
+
+.batconfidential-single.v2 .feature-link.active,
+.batconfidential-single.v2 .feature-link:hover {
+    background: #4021d7;
+    background: -webkit-gradient(linear, right top, left top, from(#8e1dd7), to(#4021d7));
+    background: linear-gradient(to left, #8e1dd7, #4021d7);
+    -webkit-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.35) !important;
+}
+
+.batconfidential-carousel .owl-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -175px;
+    width: 100%;
+    text-align: center
+}
+
+.batconfidential-carousel .owl-nav div {
+    background-color: #c1c8f6;
+    width: 65px;
+    height: 65px;
+    font-size: 45px;
+    display: inline-block;
+    line-height: 65px;
+    border-radius: 50%;
+    color: #3445c7;
+    margin: 0 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s
+}
+
+.batconfidential-carousel.style-two .owl-nav {
+    bottom: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.batconfidential-carousel.style-two .owl-nav div {
+    left: -110px;
+    position: absolute
+}
+
+.batconfidential-carousel.style-two .owl-nav .owl-next {
+    right: -110px;
+    left: auto;
+}
+
+.batconfidentials-carousel .owl-nav div:hover {
+    background-color: #4358f6;
+    color: #fff;
+}
+
+.batconfidential-carousel.style-two .owl-nav div {
+    background: #e5d3ff;
+    color: #5937a5;
+}
+
+.batconfidential-carousel.style-two .owl-nav div:hover {
+    background: #4021d7;
+    background: -webkit-gradient(linear, left top, right top, from(#8e1dd7), to(#4021d7));
+    background: linear-gradient(to right, #8e1dd7, #4021d7);
+    color: #fff
+}
+
+.batconfidential-carousel.dark .owl-nav div {
+    background: #74787b;
+    color: #fff
+}
+
+.fbatconfidential-carousel.dark .owl-nav div:hover {
+    background: #12aded;
+}
+
 /*-------------------------------------------------------------------------------------
     extra features area
 ---------------------------------------------------------------------------------------*/
@@ -1011,7 +1262,7 @@ p {
 }
 
 .extra-features-single.v3:hover {
-    background-color: #11aff1;
+    background-color: #ffd700;
 }
 
 .extra-features-single:hover span {
@@ -1166,7 +1417,7 @@ p {
 }
 
 .video-wrap.two .video-player a {
-    color: #08a9f0;
+    color: #ffd700;
 }
 
 .video-player a:hover {
@@ -1435,7 +1686,7 @@ p {
 }
 
 .pricing-title.v3 h2 {
-    color: #11aff1
+    color: #ffd700
 }
 
 .pricing-details ul li {
@@ -1470,7 +1721,7 @@ p {
 }
 
 .pricing-btn.v3 a:hover {
-    background: #08a9f0;
+    background: #ffd700;
 }
 
 .wrapper-full {
@@ -1524,7 +1775,7 @@ p {
 }
 
 .toggle.three {
-    background-color: #08a9f0
+    background-color: #ffd700
 }
 
 .check {
@@ -1932,14 +2183,16 @@ p {
     background-size: 200% auto
 }
 
+
 .watch-btns.v3 a {
-    border: 1px solid #08a9f0;
+    border: 1px solid #ffd700;
     background-color: transparent;
     color: #fff
 }
 
 .watch-btns.v3 a:hover {
-    background-color: #08a9f0;
+    background-color: #ffd700;
+    color: #000;
 }
 
 .watch-btns a i {
@@ -2157,7 +2410,7 @@ p {
 }
 
 .screen-carousel.owl-carousel .owl-dot.active {
-    background-color: #08a9f0;
+    background-color: #ffd700;
 }
 
 .screen-carousel-wrap-default .app-frame-default {
@@ -2477,7 +2730,7 @@ p {
 }
 
 .contact-form.v2 button {
-    background-color: #08a9f0;
+    background-color: #ffd700;
 }
 
 .map-pin {
@@ -2535,7 +2788,7 @@ p {
 }
 
 .map-pin.dark .marker {
-    background-color: #08a9f0
+    background-color: #ffd700
 }
 
 .map-pin.dark .marker:after {
@@ -2643,7 +2896,7 @@ p {
 }
 
 #accordion.dark .card-header a {
-    color: #11aff1
+    color: #ffd700
 }
 
 #accordion.bg .card-header.active {
@@ -2768,12 +3021,12 @@ p {
 }
 
 .footer-widget-single .footer-btns.v3 a i {
-    color: #08a9f0;
+    color: #ffd700;
 }
 
 .footer-widget-single .footer-btns a:hover {
     color: #fff;
-    background-color: #131947;
+    background-color: #141636;
 }
 
 .footer-widget-single .footer-btns a:hover i {
@@ -2804,7 +3057,7 @@ p {
     padding: 4px 8px;
     border: 4px solid #4958cd;
     border-radius: 4px;
-    color: #fff;
+    color: #141636;
     margin: 0 12px 22px
 }
 
@@ -2829,8 +3082,8 @@ p {
 }
 
 .footer-social.v3 li a:hover {
-    background-color: #fff;
-    color: #08a9f0
+    background-color: #141636;
+    color: #ffd700
 }
 
 .footer-social li a span {

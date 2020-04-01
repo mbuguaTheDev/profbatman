@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from pixner.net/cusp/cusp/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Mar 2020 08:24:32 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Professor Batman | The Academic Caped Crusader</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <!--bootstrap css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--magnific popup css-->
@@ -57,7 +56,7 @@
                                 <a class="nav-link" href="#" data-scroll-nav="2">Order Now</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll-nav="3">Blog</a>
+                                <a class="nav-link" href="#" data-scroll-nav="3">Samples</a>
                             </li>
                         </ul>
                     </div>
@@ -102,8 +101,8 @@
                             <div class="download-info-single dark">
                                 <div class="icon float-left"><i class="icofont-bat"></i></div>
                                 <div class="content float-left">
-                                    <h2>6000 +</h2>
-                                    <h5 class="text-light font-weight-normal">Completed Projects</h5>
+                                    <h2>7000 +</h2>
+                                    <h5 class="text-light font-weight-normal">Projects Completed</h5>
                                 </div>
                             </div>
                         </div>
@@ -113,8 +112,8 @@
                             <div class="download-info-single dark">
                                 <div class="icon float-left"><i class="icofont-bat"></i></div>
                                 <div class="content float-left">
-                                    <h2>6000 +</h2>
-                                    <h5 class="text-light font-weight-normal">Completed Projects</h5>
+                                    <h2>600 +</h2>
+                                    <h5 class="text-light font-weight-normal">Students Assisted</h5>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +123,8 @@
                             <div class="download-info-single dark">
                                 <div class="icon float-left"><i class="icofont-bat"></i></div>
                                 <div class="content float-left">
-                                    <h2>6000 +</h2>
-                                    <h5 class="text-light font-weight-normal">Completed Projects</h5>
+                                    <h2>TEXT</h2>
+                                    <h5 class="text-light font-weight-normal">Text: +1 (413) 461-0009</h5>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +178,7 @@ Don’t be a joker
                     <div class="features-single v3">
                         <a data-owl-item="1" class="feature-link active">
                             <div class="icon">
-                                <i class="icon-employee"></i>
+                                <i class="icofont-send-mail"></i>
                             </div>
                             <div class="content">
                                 <h4 class="text-white">Submit Your Assignment</h4>
@@ -192,7 +191,7 @@ Don’t be a joker
                     <div class="features-single v3">
                         <a data-owl-item="2" class="feature-link">
                             <div class="icon">
-                                <i class="icon-gears"></i>
+                                <i class="icofont-notepad"></i>
                             </div>
                             <div class="content">
                                 <h4 class="text-white">Writing Process</h4>
@@ -205,7 +204,7 @@ Don’t be a joker
                     <div class="features-single v3">
                         <a data-owl-item="3" class="feature-link">
                             <div class="icon">
-                                <i class="icon-secure-shield"></i>
+                                <i class="icofont-download"></i>
                             </div>
                             <div class="content">
                                 <h4 class="text-white">Receive your paper</h4>
@@ -219,22 +218,36 @@ Don’t be a joker
 
                  <!--start features carousel-->
                  <div class="col-lg-4 offset-lg-2 col-md-6">
-                    <div class="feature-screen">
-                        <div class="feature-frame"></div>
-                        <div class="features-carousel style-two dark owl-carousel">
-                            <div class="feat-screen-single">
-                                <img src="assets/images/app-screen-1.jpg" class="img-fluid" alt="">
+                 <div class="batservices-card">
+                            <div class="container">
+                                <h4 class="text-white">BatServices</h4>
+                                <ul class="text-white">
+                                    <li>Essay Writing (Any type)</li>
+                                    <li>Research Ppaer Writing</li>
+                                    <li>Course Work</li>
+                                    <li>Math Help</li>
+                                    <li>Powerpoint Prsentation</li>
+                                    <li>Book/Movie Riview</li>
+                                    <li>Thesis Help</li>
+                                    <li>Dissertation</li>
+                                </ul>
+                                <h4 class="text-white">BatFreebies</h4>
+                                <ul class="text-white">
+                                    <li>Free Title Page</li>
+                                    <li>Free Outline</li>
+                                    <li>Free Academic Formating</li>
+                                    <li>Free Reference Page</li>
+                                    <li>Free unlimited Revisions</li>
+                                </ul>
+                                <h4 class="text-white">BatGuarantee</h4>
+                                <ul class="text-white">
+                                    <li>Free Title Page</li>
+                                    <li>100% Plagiarism Free Material</li>
+                                    <li>Safe and secure payment</li>
+                                    <li>24/7 awesome superhero support team</li>
+                                    <li>Free unlimited Revisions</li>
+                                </ul>
                             </div>
-                            <div class="feat-screen-single">
-                                <img src="assets/images/app-screen-2.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="feat-screen-single">
-                                <img src="assets/images/app-screen-3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="feat-screen-single">
-                                <img src="assets/images/app-screen-2.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!--end features carousel-->
@@ -244,22 +257,20 @@ Don’t be a joker
     <!--end features area-->
 
     <!-- Start Bat Confidential -->
-    <section id="features-area" class="bg-2 bg-cover" data-scroll-index="1">
+    <section id="batconfidential-area" class="bg-2 bg-cover" data-scroll-index="1">
         <div class="container">
             <div class="row">
                 <!--start info area-->
                 <div class="col-lg-8 offset-lg-2">
-                    <div class="features-single v3">
-                        <a data-owl-item class="feature-link active">
-                            <div class="content">
+                    <div class="batconfidential-card">
+                            <div class="container">
                                 <h4 class="text-white">BatConfidential</h4>
-                                <p class="text-light font-weight-normal">Don’t be a Joker!!! ProfessorBatman is here to anonymously be your academic hero.
-Discretion and privacy is assured.</p>
+                                <p class="text-light font-weight-normal">Don’t be a Joker!!! Professor Batman is here to anonymously be your academic hero.
+ Discretion and privacy is assured.</p>
                             </div>
-                        </a>
                     </div>
                     <div class="watch-btns v3">
-                                <a href="#"><i class="icofont-phone"></i> Contact Us</a>
+                        <a href="#"><i class="icofont-phone"></i> Contact Us</a>
                     </div>
                 </div>
                 <!--end info area-->
@@ -279,7 +290,7 @@ Discretion and privacy is assured.</p>
                     </div>
                     <!--start contact form-->
                     <div class="contact-form v2">
-                        <form id="ajax-contact" action="http://pixner.net/cusp/cusp/contact.php" method="post">
+                        <form id="ajax-contact" action="#" method="post">
                            <div class="form-group">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required="required" data-error="valid email is required.">
                                 <div class="help-block with-errors"></div>
@@ -303,8 +314,7 @@ Discretion and privacy is assured.</p>
                 <!--start contact info single-->
                 <div class="col-lg-3 col-md-4">
                     <div class="contact-info-single">
-                        <h4 class="text-white">Address #1</h4>
-                        <p class="text-light">10624 19th Ave sw, Seattle WA 98146United States</p>
+                        <p class="text-light">Batman Virtual University, <br>Springfield, Massachusetts.</p>
                     </div>
                 </div>
                 <!--end contact info single-->
@@ -317,72 +327,6 @@ Discretion and privacy is assured.</p>
         </div>
     </section>
     <!--end contact area-->
-    <!--start faq area-->
-    <section id="faq-area" class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-6">
-                    <div class="faq-content">
-                        <h2 class="text-white">Do you have questions</h2>
-                        <p class="text-light">We are Cusp. We are a passionate team of software developers, marketers, and designers focused on driving results for our clients in the fast-growing. We believe businesses should make customers smile.</p>
-                        <p class="text-light">Our Mobile App can be downloaded and installed on your compatible mobile device easily. If you have any questions - please look through the most frequently asked questions or contact us for more details.</p>
-                    </div>
-                </div>
-                <!--start faq accordian-->
-                <div class="col-lg-7 col-md-6">
-                    <div id="accordion" class="dark" role="tablist">
-                        <!--start faq single-->
-                        <div class="card">
-                            <div class="card-header active" role="tab" id="headingOne">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is the Mobile App Secure?</a>
-                                </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p>Both the Mobile Apps and the Mobile Web App give you the ability to you to access your account information, view news releases, report an outage, and contact us via email or phone.</p>
-                                    <p>Once you've installed a Mobile App on your phone, you'll also have the ability to view a map of our offices and payment locations.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--end faq single-->
-                        <!--start faq single-->
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How do I get the Mobile App for my phone?</a>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p>Both the Mobile Apps and the Mobile Web App give you the ability to you to access your account information, view news releases, report an outage, and contact us via email or phone.</p>
-                                    <p>Once you've installed a Mobile App on your phone, you'll also have the ability to view a map of our offices and payment locations.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--end faq single-->
-                        <!--start faq single-->
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How does Sigms differ from usual apps? </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p>Both the Mobile Apps and the Mobile Web App give you the ability to you to access your account information, view news releases, report an outage, and contact us via email or phone.</p>
-                                    <p>Once you've installed a Mobile App on your phone, you'll also have the ability to view a map of our offices and payment locations.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--end faq single-->
-                    </div>
-                </div>
-                <!--end faq accordian-->
-            </div>
-        </div>
-    </section>
-    <!--end faq area-->
     <!--start footer-->
     <footer id="footer" class="bg-dark-2">
         <div class="container">
@@ -390,52 +334,63 @@ Discretion and privacy is assured.</p>
                 <div class="row">
                     <!--start footer widget single-->
                     <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget-single">
-                            <h4 class="text-uppercase text-white">About us</h4>
-                            <ul>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> About</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Our Team</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Blog</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Newsletters</a></li>
-                            </ul>
-                        </div>
+                    <div class="batservices-card">
+                            <div class="container">
+                                <h4 class="text-white">BatServices</h4>
+                                <ul class="text-white">
+                                    <li>Essay Writing (Any type)</li>
+                                    <li>Research Ppaer Writing</li>
+                                    <li>Course Work</li>
+                                    <li>Math Help</li>
+                                    <li>Powerpoint Prsentation</li>
+                                    <li>Book/Movie Riview</li>
+                                    <li>Thesis Help</li>
+                                    <li>Dissertation</li>
+                                </ul>
+                            </div>
+                    </div>
+                    </div>
+                    <!--end footer widget single-->
+                    <!--start footer widget single-->
+                    <div class="col-lg-3 col-md-6">
+                    <div class="batservices-card">
+                            <div class="container">
+                                <h4 class="text-white">BatFreebies</h4>
+                                <ul class="text-white">
+                                    <li>Free Title Page</li>
+                                    <li>Free Outline</li>
+                                    <li>Free Academic Formating</li>
+                                    <li>Free Reference Page</li>
+                                    <li>Free unlimited Revisions</li>
+                                </ul>
+                            </div>
+                    </div>
+                    </div>
+                    <!--end footer widget single-->
+                    <!--start footer widget single-->
+                    <div class="col-lg-3 col-md-6">
+                    <div class="batservices-card">
+                            <div class="container">
+                                <h4 class="text-white">BatGuarantee</h4>
+                                <ul class="text-white">
+                                    <li>Free Title Page</li>
+                                    <li>100% Plagiarism Free Material</li>
+                                    <li>Safe and secure payment</li>
+                                    <li>24/7 awesome superhero support team</li>
+                                    <li>Free unlimited Revisions</li>
+                                </ul>
+                            </div>
+                    </div>
                     </div>
                     <!--end footer widget single-->
                     <!--start footer widget single-->
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-widget-single">
-                            <h4 class="text-uppercase text-white">Help center</h4>
-                            <ul>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Documentations</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> How it Works</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Support</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Term of Use</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--end footer widget single-->
-                    <!--start footer widget single-->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget-single">
-                            <h4 class="text-uppercase text-white">tools</h4>
-                            <ul>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Create Account</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Login</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Services</a></li>
-                                <li><a href="#"><i class="icofont-long-arrow-right"></i> Sitemap</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--end footer widget single-->
-                    <!--start footer widget single-->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget-single">
-                            <h4 class="text-uppercase text-white">Download app Now</h4>
-                            <p class="text-white">Select your device platform and Use Our app and Enjoy Your Life.</p>
                             <div class="footer-btns v3">
                                 <ul>
-                                    <li><a href="#"><i class="icofont-brand-android-robot"></i> GOOGLE PLAY</a></li>
-                                    <li><a href="#"><i class="icofont-brand-apple"></i> APP STORE</a></li>
+                                    <li><a href="#"><i class="icofont-file-text"></i> ORDER NOW</a></li>
+                                    <p style= "padding-left: 85px;" class="text-white">OR</p>
+                                    <li><a href="#"><i class="icofont-email"></i> CONTACT US</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -447,14 +402,14 @@ Discretion and privacy is assured.</p>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="copyright-text">
-                            <p class="text-white m-0">&copy; 2019 Cusp | All right reserved.</p>
+                            <p class="text-white m-0">&copy; 2020 Professor Batman | All right reserved.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="footer-social v3 text-right">
                             <ul>
-                                <li><a href="#"><span><i class="icofont-facebook"></i></span></a></li>
-                                <li><a href="#"><span><i class="icofont-linkedin"></i></span></a></li>
+                                <li><a href="#"><span><i class="icofont-email"></i></span></a></li>
+                                <li><a href="#"><span><i class="icofont-instagram"></i></span></a></li>
                                 <li><a href="#"><span><i class="icofont-twitter"></i></span></a></li>
                             </ul>
                         </div>
@@ -489,7 +444,4 @@ Discretion and privacy is assured.</p>
     <script src="assets/js/custom.js"></script>
 
 </body>
-
-
-<!-- Mirrored from pixner.net/cusp/cusp/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Mar 2020 08:25:16 GMT -->
 </html>
