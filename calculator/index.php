@@ -19,17 +19,21 @@
                     <div class="row">
                     <div class="col-sm-6">
                     </div>
-                    <div class="col-sm-4" style="border: 1px solid #000;background-color: #006cff;padding:10px;">
-                    <h3>PRICE CALCULATOR</h3>
+                    <div class="col-sm-4" 
+                    style="background-color: #2d5ceb;
+                    padding:10px; 
+                    border-radius:10px">
+
+                    <h3 style = "color: #fff">PRICE CALCULATOR</h3>
 
                     <form action="/action_page.php">
 
-                    <label for="sel1">Currency</label>
+                    <label style = "color: #fff" for="sel1">Currency</label>
                     <select class="form-control" id="sel1">
                     <option>USD</option>
                     </select>
 
-                    <label for="sel1">Academic Level</label>
+                    <label style = "color: #fff" for="sel1">Academic Level</label>
                     <select class="form-control" id="sel1">
                     <option value="1" selected="">HighSchool</option>
                     <option value="2">Undergraduate</option>
@@ -37,7 +41,7 @@
                     <option value="4">PHD</option>
                     </select>
 
-                    <label for="sel1">Type of Paper</label>
+                    <label style = "color: #fff" for="sel1">Type of Paper</label>
                     <select class="form-control" id="sel1">
                     <optgroup label="&nbsp;Essays">
                     <option value="Annotated Bibliography" selected="">Annotated Bibliography</option>
@@ -93,7 +97,7 @@
 
 
 
-                    <label for="sel1">Deadline</label>
+                    <label style = "color: #fff" for="sel1">Deadline</label>
                     <select class="form-control" id="sel1">
                     <option value="14" selected="">14 days</option>
                     <option value="9">9 days</option>
@@ -107,7 +111,7 @@
                     </select>
 
                     <div class="form-group">
-                    <label for="Pages">Pages:</label>
+                    <label style = "color: #fff" for="Pages">Pages:</label>
                     <input type="number" class="form-control" id="Pages" required value="1" min="1" max="400" step="1">
                     </div>
                     <div style="width:auto;height:60px;border:1px solid #000;margin-bottom:10px;">
@@ -120,6 +124,7 @@
                     </div>
                     </div>
                     </div>
-
+                    
+                    <script src = "calculator.js"></script>
                     </body>
                     </html>
