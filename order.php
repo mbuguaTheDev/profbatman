@@ -2,7 +2,7 @@
     <html lang="en">
 
     <head>
-        <title>Calc</title>
+        <title>Order</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,12 +11,6 @@
     </head>
 
     <body>
-
-        <div class="jumbotron text-center">
-            <h3>ORDER DETAILS(1)</h3>
-
-        </div>
-
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">
@@ -25,7 +19,7 @@
     padding:10px; 
     border-radius:10px;border:3px solid #ffd700;">
 
-                    <h3 style="color: #fff">ORDER DETAILS(1)</h3>
+                    <h3 style="color: #fff">ORDER DETAILS</h3>
 
                     <form action="/action_page.php">
 
@@ -44,7 +38,6 @@
                                 </div>
                             </div>
                         </div>
-
 
                         <div class="col-sm-12">
                             <div class="col-sm-6">
@@ -113,10 +106,10 @@
                             <div class="col-sm-6">
                                 <label style="color: #fff" for="sel1">Academic Level</label>
                                 <select class="form-control" id="sel1">
-                                    <option value="1" selected="">HighSchool</option>
-                                    <option value="2">Undergraduate</option>
-                                    <option value="3">Master</option>
-                                    <option value="4">PHD</option>
+                                    <option value="HighSchool" selected="">HighSchool</option>
+                                    <option value="Undergraduate">Undergraduate</option>
+                                    <option value="Master">Master</option>
+                                    <option value="Phd">PHD</option>
                                 </select>
                             </div>
 
@@ -183,15 +176,15 @@
                             <div class="col-sm-6">
                                 <label style="color: #fff" for="sel1">Urgency</label>
                                 <select class="form-control" id="sel1">
-                                    <option value="14" selected="">14 days</option>
-                                    <option value="9">9 days</option>
-                                    <option value="7">7 days</option>
-                                    <option value="5">5 days</option>
-                                    <option value="3">3 days</option>
-                                    <option value="2">2 days</option>
-                                    <option value="24">24 hours</option>
-                                    <option value="12">12 hours</option>
-                                    <option value="6">6 hours</option>
+                                    <option value="14days" selected="">14 days</option>
+                                    <option value="9Days">9 days</option>
+                                    <option value="7Days">7 days</option>
+                                    <option value="5Days">5 days</option>
+                                    <option value="3Days">3 days</option>
+                                    <option value="2Days">2 days</option>
+                                    <option value="24Hours">24 hours</option>
+                                    <option value="12Hours">12 hours</option>
+                                    <option value="6Hours">6 hours</option>
                                 </select>
 
                             </div>
@@ -199,7 +192,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label style="color: #fff" for="Pages">Pages:</label>
-                                    <input type="number" class="form-control" id="Pages" required value="1" min="1"
+                                    <input type="number" class="form-control" id="Pages" required value="Pages" min="1"
                                         max="400" step="1">
                                 </div>
                             </div>
@@ -284,9 +277,10 @@
                                 <h4 style="font-size:15px">Total Price :<span id="totalPrice"></span></h4>
                             </div>
                         </div>
-
+<div class="col-sm-12">
                         <button type="submit" class="btn btn-warning pull-right" style="border-radius: 50px;">Continue
                             to Order</button>
+                            </div>
                     </form>
                     <div class="col-sm-4">
                     </div>
