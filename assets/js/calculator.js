@@ -81,10 +81,14 @@ function totalPrice() {
       var price = 35;
     }
   }
+
+  //get number of pages
   var pages = document.getElementById("Pages").value;
 
+  //calculate total price
   var totalPrice = price * pages;
-
+  
+  //display total on the calculator
   document.getElementById("totalPrice").innerHTML = totalPrice;
 }
 
