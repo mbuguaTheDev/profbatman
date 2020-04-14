@@ -99,12 +99,12 @@ function totalPrice() {
     specialSub = 1;
   }
 
-  
   //Grand total from all variables
   var totalPrice = price * pages * spacePrice * workTypeCost * specialSub;
 
   // Display the total as the variables change & round it to 2dp
-  document.getElementById("totalPrice").innerHTML = Math.round(totalPrice * 100)/100;
+  document.getElementById("totalPrice").innerHTML =
+    Math.round(totalPrice * 100) / 100;
 }
 
 totalPrice();
