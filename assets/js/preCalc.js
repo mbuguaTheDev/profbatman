@@ -6,13 +6,10 @@ function formElements(elementID) {
   return parseFloat(value);
 }
 
-function totalPrice() {
+function prePrice() {
   var academic = formElements("academicLevel");
   var deadline = formElements("urgency");
   var pages = document.getElementById("Pages").value;
-  var workType = formElements("workType");
-  var spacing = formElements("spacing");
-  var subject = formElements("subject");
 
   // Highschool
   if (academic == 1) {
@@ -85,26 +82,10 @@ function totalPrice() {
       var price = 35;
     }
   }
-
-  //Check Spacing either double or  single
-  var spacePrice = spacing == 1 ? 1 : 1.8;
-
-  //Worktype either scratch or proffreading
-  var workTypeCost = workType == 1 ? 1 : 0.7;
-
-  //special subject
-  if (subject == 5 || subject == 16 || subject == 20) {
-    specialSub = 1.15;
-  } else {
-    specialSub = 1;
-  }
-
   
-  //Grand total from all variables
-  var totalPrice = price * pages * spacePrice * workTypeCost * specialSub;
-
-  // Display the total as the variables change & round it to 2dp
-  document.getElementById("totalPrice").innerHTML = Math.round(totalPrice * 100)/100;
+  var prePrice = price * pages;
+  document.getElementById("prePrice").innerHTML = prePrice;
 }
 
-totalPrice();
+prePrice()
+
