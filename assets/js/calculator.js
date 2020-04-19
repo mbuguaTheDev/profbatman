@@ -89,7 +89,7 @@ function totalPrice() {
   //Check Spacing either double or  single
   var spacePrice = spacing == 1 ? 1 : 1.8;
 
-  //Worktype either scratch or proffreading
+  //Worktype either scratch or proofreading
   var workTypeCost = workType == 1 ? 1 : 0.7;
 
   //special subject
