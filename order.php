@@ -1,13 +1,14 @@
-<?php include 'header.php' ?>
-<section id="hero-area" class="bg-3 bg-cover" data-scroll-index="0">
+<?php include 'header.php';
+$paypal_seller = 'lmbugua45@gmail.com'; //PayPal account email address
+$paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
+?> <section id="hero-area" class="bg-3 bg-cover" data-scroll-index="0">
     <div class="container">
         <div class="row calcDetails">
             <div class="col-sm-10" style="background-color: #2c2d36;
                 padding:10px; 
                 border-radius:10px;border:3px solid #ffd700;">
                 <h3 style="color: #fff; text-align: center;">ORDER DETAILS</h3>
-
-                <form id="mainCalc" action="/action_page.php" class="needs-validation">
+                <form id="mainCalc" action="<?php echo $paypal_url; ?>" class="needs-validation">
                     <div class=" row">
                         <div class="col-sm">
                             <div class="form-group">
@@ -39,8 +40,7 @@
                             <label class="formLabel">Type of Paper *</label>
                             <select class="form-control" id="sel1">
                                 <optgroup label="&nbsp;Essays">
-                                    <option value="Annotated Bibliography" selected="">Annotated Bibliography
-                                    </option>
+                                    <option value="Annotated Bibliography" selected="">Annotated Bibliography </option>
                                     <option value="Argumentative Essay">Argumentative Essay</option>
                                     <option value="Article">Article</option>
                                     <option value="Article review">Article review</option>
@@ -63,7 +63,6 @@
                                     <option value="Thesis proposal">Thesis proposal</option>
                                     <option value="Thesis statement">Thesis statement</option>
                                 </optgroup>
-
                                 <optgroup label="&nbsp;Dissertation">
                                     <option value="Dissertation">Dissertation</option>
                                     <option value="Dissertation abstract">Dissertation abstract</option>
@@ -75,11 +74,9 @@
                                     <option value="Dissertation proposal">Dissertation proposal</option>
                                     <option value="Dissertation results">Dissertation results</option>
                                 </optgroup>
-
                                 <optgroup label="&nbsp;Problem">
                                     <option value="Problem solving">Problem solving</option>
                                 </optgroup>
-
                                 <optgroup label="&nbsp;Admission">
                                     <option value="Admission essay">Admission essay</option>
                                     <option value="Application letter">Application letter</option>
@@ -88,10 +85,8 @@
                                     <option value="Personal statement">Personal statement</option>
                                     <option value="Resume">Resume</option>
                                 </optgroup>
-
                             </select>
                         </div>
-
                         <div class="col-sm">
                             <label class="formLabel">Work Type *</label>
                             <select class="form-control" id="workType" onchange="totalPrice()">
@@ -159,23 +154,19 @@
                         <div class="col-sm">
                             <label class="formLabel">Paper Format *</label>
                             <select class="form-control" id="sel1">
-
                                 <option value="14" selected="">APA</option>
                                 <option value="9">Chicago</option>
                                 <option value="7">Harvard</option>
                                 <option value="5">MLA</option>
                                 <option value="3">Turabian</option>
-
                             </select>
                         </div>
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel" for="Pages">Preferred English *</label>
                                 <select class="form-control" id="sel1">
-
                                     <option value="14" selected="">US</option>
                                     <option value="9">UK English</option>
-
                                 </select>
                             </div>
                         </div>
@@ -184,7 +175,6 @@
                         <div class="col-sm-8">
                             <div class=form-group>
                                 <label class="formLabel">Paper Instructions *</label>
-
                                 <textarea class="form-control" rows="3" required>
                               </textarea>
                             </div>
@@ -196,7 +186,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-sm">
                             <label class="formLabel">Number of sources</label>
@@ -230,8 +219,15 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="row">
+                        <!-- Get paypal email address from paypal.php -->
+                        <input type="hidden" name="business" value="lmbugua45@gmail.com">
+                        <!-- Specify product details -->
+                        <input type="hidden" name="item_name" value="Wrting services">
+                        <input type="hidden" name="amount" id="amount" value="">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <!-- Submit Button -->
+                        <input type="hidden" name="cmd" value="_xclick">
                         <div class="col-sm">
                             <button type="submit" class="orderBtn">Continue to Order</button>
                         </div>
@@ -241,14 +237,12 @@
             <div class="col-sm-2">
                 <div class="card totalPrice">
                     <h3>Total Price</h3>
-                    <h2 id="totalPrice">$ 0</h2>
+                    <h2 id="totalPrice">$0</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <!-- Calculator Js -->
 <script src="assets/js/calculator.js">
-</script>
-<?php include 'footer.php' ?>
+</script> <?php include 'footer.php' ?>
