@@ -221,7 +221,7 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                     </div>
                     <div class="row">
                         <!-- Get paypal email address from paypal.php -->
-                        <input type="hidden" name="business" value="lmbugua45@gmail.com">
+                        <input type="hidden" name="business" value="<?php echo $paypal_seller; ?>">
                         <!-- Specify product details -->
                         <input type="hidden" name="item_name" value="Wrting services">
                         <input type="hidden" name="amount" id="amount" value="">
