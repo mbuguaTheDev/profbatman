@@ -29,6 +29,8 @@ function totalPrice() {
       var price = 16;
     }
   }
+  
+  // nothing
 
   // Undergraduate
   else if (academic == 2) {
@@ -93,7 +95,7 @@ function totalPrice() {
   var workTypeCost = workType == 1 ? 1 : 0.7;
 
   //special subject
-  if (subject == 5 || subject == 16 || subject == 20) {
+  if (subject == 1 || subject == 2 || subject == 3 || subject == 4) {
     specialSub = 1.15;
   } else {
     specialSub = 1;
@@ -102,9 +104,12 @@ function totalPrice() {
   //Grand total from all variables
   var totalPrice = price * pages * spacePrice * workTypeCost * specialSub;
 
-  // Display the total as the variables change & round it to 2dp
-  document.getElementById("totalPrice").innerHTML =
-    Math.round(totalPrice * 100) / 100;
+  //rounded off price
+  var roundedPrice = Math.round(totalPrice * 100) / 100;
+  
+  // Display the total as the variables change & round  | pass to paypal
+  document.getElementById("totalPrice").innerHTML = roundedPrice;
+  document.getElementById("amount").value = roundedPrice;
 }
 
 totalPrice();

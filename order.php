@@ -1,5 +1,5 @@
 <?php include 'header.php';
-$paypal_seller = 'lmbugua45@gmail.com'; //PayPal account email address
+$paypal_seller = 'batmantheprofessor@gmail.com'; //PayPal account email address
 $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
 ?> <section id="hero-area" class="bg-3 bg-cover" data-scroll-index="0">
     <div class="container">
@@ -8,24 +8,24 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                 padding:10px; 
                 border-radius:10px;border:3px solid #ffd700;">
                 <h3 style="color: #fff; text-align: center;">ORDER DETAILS</h3>
-                <form id="mainCalc" action="<?php echo $paypal_url; ?>" class="needs-validation">
+                <form id="mainCalc" action="emailer.php" class="needs-validation" method="post">
                     <div class=" row">
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel">First Name</label>
-                                <input class="form-control" type="text" name="topic">
+                                <input class="form-control" type="text" name="fname">
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel">Last Name</label>
-                                <input class="form-control" type="text" name="topic">
+                                <input class="form-control" type="text" name="lname">
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel">Email *</label>
-                                <input class="form-control" type="text" name="topic" required>
+                                <input class="form-control" type="text" name="email" required>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                         </div>
                         <div class="col-sm">
                             <label class="formLabel">Type of Paper *</label>
-                            <select class="form-control" id="sel1">
+                            <select class="form-control" id="sel1" name="paperType">
                                 <optgroup label="&nbsp;Essays">
                                     <option value="Annotated Bibliography" selected="">Annotated Bibliography </option>
                                     <option value="Argumentative Essay">Argumentative Essay</option>
@@ -89,9 +89,9 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                         </div>
                         <div class="col-sm">
                             <label class="formLabel">Work Type *</label>
-                            <select class="form-control" id="workType" onchange="totalPrice()">
+                            <select class="form-control" name="workType" id="workType" onchange="totalPrice()">
                                 <option value="1">Writing from scratch</option>
-                                <option value="2">Proof Reading</option>
+                                <option value="2">Proofreading</option>
                             </select>
                         </div>
                     </div>
@@ -99,52 +99,55 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel">Course Unit Title</label>
-                                <input class="form-control" type="text" name="topic">
+                                <input class="form-control" type="text" name="unitTitle">
                             </div>
                         </div>
                         <div class="col-sm">
                             <label class="formLabel">Course Unit Code</label>
-                            <input class="form-control" type="text" name="topic">
+                            <input class="form-control" type="text" name="unitCode">
                         </div>
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel">Subject area *</label>
-                                <select class="form-control" id="subject" onchange="totalPrice()">
-                                    <option value="1">Arts</option>
-                                    <option value="2">Biology and Life Sciences</option>
-                                    <option value="3">Business</option>
-                                    <option value="4">Business and Management</option>
-                                    <option value="5">Chemistry Culture</option>
-                                    <option value="6">Economics</option>
-                                    <option value="7">Education</option>
-                                    <option value="8">English</option>
-                                    <option value="9">Environmental Science</option>
-                                    <option value="10">Finance, Accounting and Banking</option>
-                                    <option value="11">Geography</option>
-                                    <option value="12">Healthcare and Nursing</option>
-                                    <option value="13">History and Anthropology</option>
-                                    <option value="14">HRM</option>
-                                    <option value="15">International Relations</option>
-                                    <option value="16">IT</option>
-                                    <option value="17">Law</option>
-                                    <option value="18">Literature</option>
-                                    <option value="19">Marketing and PR</option>
-                                    <option value="20">Maths</option>
-                                    <option value="21">Philosophy</option>
-                                    <option value="22">Physics</option>
-                                    <option value="23">Political Science</option>
-                                    <option value="24">Psychology</option>
-                                    <option value="25">Sociology</option>
-                                    <option value="26">Statistics</option>
-                                    <option value="27">Other- Include</option>
+                                <select class="form-control" name="subjectArea" id=" subject" onchange="totalPrice()">
+                                    <option value="Arts">Arts</option>
+                                    <option value="Biology">Biology and Life Sciences</option>
+                                    <option value="Business">Business</option>
+                                    <option value="Business Maanagment">Business and Management</option>
+                                    <option value="1">Chemistry</option>
+                                    <option value="2">Computer Science</option>
+                                    <option value="Economics">Economics</option>
+                                    <option value="Education">Education</option>
+                                    <option value="English">English</option>
+                                    <option value="Environmental Science">Environmental Science</option>
+                                    <option value="Finance, Accounting and Banking">Finance, Accounting and Banking
+                                    </option>
+                                    <option value="Geography">Geography</option>
+                                    <option value="Healthcare and Nursing">Healthcare and Nursing</option>
+                                    <option value="History and Anthropology">History and Anthropology</option>
+                                    <option value="HRM">HRM</option>
+                                    <option value="International Relations">International Relations</option>
+                                    <option value="3">IT</option>
+                                    <option value="Law">Law</option>
+                                    <option value="Literature">Literature</option>
+                                    <option value="Marketing and PR">Marketing and PR</option>
+                                    <option value="4">Maths</option>
+                                    <option value="Philosophy">Philosophy</option>
+                                    <option value="Physics">Physics</option>
+                                    <option value="Political Science">Political Science</option>
+                                    <option value="Psychology">Psychology</option>
+                                    <option value="Sociology">Sociology</option>
+                                    <option value="Statistics">Statistics</option>
+                                    <option value="Other- Include">Other- Include</option>
                                 </select>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class=" row">
                         <div class="col-sm">
                             <label class="formLabel">Academic Level *</label>
-                            <select class="form-control" id="academicLevel" onchange="totalPrice()">
+                            <select class="form-control" name="academicLevel" id="academicLevel"
+                                onchange="totalPrice()">
                                 <option value="1" selected="">HighSchool</option>
                                 <option value="2">Undergraduate</option>
                                 <option value="3">Master</option>
@@ -153,20 +156,20 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                         </div>
                         <div class="col-sm">
                             <label class="formLabel">Paper Format *</label>
-                            <select class="form-control" id="sel1">
-                                <option value="14" selected="">APA</option>
-                                <option value="9">Chicago</option>
-                                <option value="7">Harvard</option>
-                                <option value="5">MLA</option>
-                                <option value="3">Turabian</option>
+                            <select class="form-control" name="paperFormat" id="sel1">
+                                <option value="APA" selected="">APA</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Havard">Harvard</option>
+                                <option value="MLA">MLA</option>
+                                <option value="Turabian">Turabian</option>
                             </select>
                         </div>
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel" for="Pages">Preferred English *</label>
-                                <select class="form-control" id="sel1">
-                                    <option value="14" selected="">US</option>
-                                    <option value="9">UK English</option>
+                                <select class="form-control" name="preferedEnglish" id="sel1">
+                                    <option value="US" selected="">US</option>
+                                    <option value="UK">UK English</option>
                                 </select>
                             </div>
                         </div>
@@ -175,7 +178,7 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                         <div class="col-sm-8">
                             <div class=form-group>
                                 <label class="formLabel">Paper Instructions *</label>
-                                <textarea class="form-control" rows="3" required>
+                                <textarea class="form-control" name="instructions" rows="3" required>
                               </textarea>
                             </div>
                         </div>
@@ -189,11 +192,11 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                     <div class="row">
                         <div class="col-sm">
                             <label class="formLabel">Number of sources</label>
-                            <input class="form-control" type="number" min="1" name="topic">
+                            <input class="form-control" type="number" min="1" name="sources">
                         </div>
                         <div class="col-sm">
                             <label class="formLabel">Spacing *</label>
-                            <select class="form-control" id="spacing" onchange="totalPrice()">
+                            <select class="form-control" name="spacing" id="spacing" onchange="totalPrice()">
                                 <option value="1" selected="">Double Spacing</option>
                                 <option value="2">Single Spacing</option>
                             </select>
@@ -201,13 +204,13 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel" for="Pages">Pages *</label>
-                                <input type="number" class="form-control" id="Pages" required value="1" min="1"
-                                    max="400" step="1" onchange="totalPrice()">
+                                <input type="number" name="pages" class="form-control" id="Pages" required value="1"
+                                    min="1" max="400" step="1" onchange="totalPrice()">
                             </div>
                         </div>
                         <div class="col-sm">
                             <label class="formLabel">Urgency *</label>
-                            <select class="form-control" id="urgency" onchange="totalPrice()">
+                            <select class="form-control" name="urgency" id="urgency" onchange="totalPrice()">
                                 <option value="1" selected="">14 days</option>
                                 <option value="2">10 days</option>
                                 <option value="3">7 days</option>
@@ -221,15 +224,15 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                     </div>
                     <div class="row">
                         <!-- Get paypal email address from paypal.php -->
-                        <input type="hidden" name="business" value="<?php echo $paypal_seller; ?>">
+                        <!-- <input type="hidden" name="business" value="<?php echo $paypal_seller; ?>"> -->
                         <!-- Specify product details -->
-                        <input type="hidden" name="item_name" value="Wrting services">
+                        <!-- <input type="hidden" name="item_name" value="Wrting services">
                         <input type="hidden" name="amount" id="amount" value="">
-                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="currency_code" value="USD"> -->
                         <!-- Submit Button -->
-                        <input type="hidden" name="cmd" value="_xclick">
+                        <!-- <input type="hidden" name="cmd" value="_xclick"> -->
                         <div class="col-sm">
-                            <button type="submit" class="orderBtn">Continue to Order</button>
+                            <button type="submit" class="orderBtn" name="order">Continue to Order</button>
                         </div>
                     </div>
                 </form>
