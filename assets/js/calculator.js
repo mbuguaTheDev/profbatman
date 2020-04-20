@@ -30,7 +30,6 @@ function totalPrice() {
     }
   }
   
-  // nothing
 
   // Undergraduate
   else if (academic == 2) {
@@ -109,7 +108,7 @@ function totalPrice() {
   
   // Display the total as the variables change & round  | pass to paypal
   document.getElementById("totalPrice").innerHTML = roundedPrice;
-  document.getElementById("amount").value = roundedPrice;
+  //document.getElementById("amount").value = roundedPrice;
 }
 
 totalPrice();

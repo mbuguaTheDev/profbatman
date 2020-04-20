@@ -101,6 +101,8 @@ $mail = new PHPMailer(TRUE);
 try {
    //sender
    $mail->setFrom($email, $fname);
+   
+   $mail-> isHTML(TRUE);
 
    //recipient
    $mail->addAddress('opencubetechnologies@gmail.com');
