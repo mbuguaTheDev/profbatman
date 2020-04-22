@@ -3655,8 +3655,9 @@ input, select {
 .totalPrice {
     background-color: #ffd700;
     text-align: center;
-    position: fixed;
     padding: 30px;
+    margin: 0 auto;
+
 }
 
 .orderBtn{
@@ -3670,6 +3671,7 @@ input, select {
   margin: auto;
   font-size: 20px;
   font-weight: 800;
+  font-family: "Orbitron", sans-serif;
 }
 
 .orderBtn :hover {

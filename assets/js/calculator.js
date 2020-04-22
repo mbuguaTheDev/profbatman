@@ -29,7 +29,6 @@ function totalPrice() {
       var price = 16;
     }
   }
-  
 
   // Undergraduate
   else if (academic == 2) {
@@ -105,10 +104,10 @@ function totalPrice() {
 
   //rounded off price
   var roundedPrice = Math.round(totalPrice * 100) / 100;
-  
-  // Display the total as the variables change & round  | pass to paypal
+
+  // Display the total on the total card round  && pass to paypal
   document.getElementById("totalPrice").innerHTML = roundedPrice;
-  //document.getElementById("amount").value = roundedPrice;
+  document.getElementById("amount").value = roundedPrice;
 }
 
 totalPrice();

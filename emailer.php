@@ -114,7 +114,8 @@ try {
    $mail->Body = $body;
 
    // Send the mail.
-   $mail->send();
+   //$mail->send();
+   paypal();
 }
 catch (Exception $e)
 {
@@ -127,5 +128,10 @@ catch (\Exception $e)
 }
    
    
+}
+
+function paypal(){
+   header('Location: ordersuccess');
+
 }
 ?>

@@ -26,7 +26,7 @@
 
                         <h3 style="color: #fff; border-bottom: 1px solid #ffd700;">PRICE CALCULATOR</h3>
 
-                        <form id="calcForm" action="/action_page.php">
+                        <form id="calcForm">
 
                             <label style="color: #fff" for="sel1">Currency</label>
                             <select class="form-control" id="sel1">
@@ -124,11 +124,10 @@
                                         id="prePrice"></span>
                                 </h4>
                             </div>
-
-                            <button type="submit" class="btn btn-warning pull-right"
-                                style="border-radius: 50px;">Continue to
-                                Order</button>
                         </form>
+                        <a href="order"><button class="btn btn-warning pull-right" style="border-radius: 50px;">Continue
+                                to
+                                Order</button></a>
 
                     </div>
                 </div>

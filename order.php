@@ -1,6 +1,4 @@
 <?php include 'header.php';
-$paypal_seller = 'batmantheprofessor@gmail.com'; //PayPal account email address
-$paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
 ?> <section id="hero-area" class="bg-3 bg-cover" data-scroll-index="0">
     <div class="container">
         <div class="row calcDetails">
@@ -8,7 +6,7 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                 padding:10px; 
                 border-radius:10px;border:3px solid #ffd700;">
                 <h3 style="color: #fff; text-align: center;">ORDER DETAILS</h3>
-                <form id="mainCalc" action="emailer.php" class="needs-validation" method="post">
+                <form id="mainCalc" action="ordersuccess" class="needs-validation" method="post">
                     <div class=" row">
                         <div class="col-sm">
                             <div class="form-group">
@@ -109,7 +107,7 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                         <div class="col-sm">
                             <div class="form-group">
                                 <label class="formLabel">Subject area *</label>
-                                <select class="form-control" name="subjectArea" id=" subject" onchange="totalPrice()">
+                                <select class="form-control" name="subjectArea" id="subject" onchange="totalPrice()">
                                     <option value="Arts">Arts</option>
                                     <option value="Biology">Biology and Life Sciences</option>
                                     <option value="Business">Business</option>
@@ -173,6 +171,12 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                                 </select>
                             </div>
                         </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label class="formLabel">Phone Number</label>
+                                <input class="form-control" type="text" name="phoneNumber">
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-8">
@@ -223,15 +227,8 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
                         </div>
                     </div>
                     <div class="row">
-                        <!-- Get paypal email address from paypal.php -->
-                        <!-- <input type="hidden" name="business" value="<?php echo $paypal_seller; ?>"> -->
-                        <!-- Specify product details -->
-                        <!-- <input type="hidden" name="item_name" value="Wrting services">
                         <input type="hidden" name="amount" id="amount" value="">
-                        <input type="hidden" name="currency_code" value="USD"> -->
-                        <!-- Submit Button -->
-                        <!-- <input type="hidden" name="cmd" value="_xclick"> -->
-                        <div class="col-sm">
+                        <div class=" col-sm">
                             <button type="submit" class="orderBtn" name="order">Continue to Order</button>
                         </div>
                     </div>
@@ -240,7 +237,7 @@ $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
             <div class="col-sm-2">
                 <div class="card totalPrice">
                     <h3>Total Price</h3>
-                    <h2 id="totalPrice">$0</h2>
+                    <h2 id="totalPrice" value="">$0</h2>
                 </div>
             </div>
         </div>
