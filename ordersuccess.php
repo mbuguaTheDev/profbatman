@@ -13,7 +13,7 @@ else{
 include 'header.php';
 
 //autoload from composeer
-require $_SERVER['DOCUMENT_ROOT'] . 'vendor/autoload.php' ;
+require 'vendor/autoload.php' ;
 
 $paypal_seller = 'batmantheprofessor@gmail.com'; //PayPal account email address
 $paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
@@ -120,7 +120,7 @@ try {
    $mail-> isHTML(TRUE);
 
    //recipient
-   $mail->addAddress('batmantheprofessor@gmail.com');
+   $mail->addAddress('lmbugua45@gmail.com');
 
    //subject
    $mail->Subject = 'New Order';

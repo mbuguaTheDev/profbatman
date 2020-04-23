@@ -1,137 +1,118 @@
 <?php
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
+
+// //autoload from composer
+// //require 'vendor/autoload.php' ;
+// require 'src/PHPMailer.php';
+
+// $mail = new PHPMailer(TRUE);
+
+// // Open the try/catch block
+// try {
+//    //sender
+//    $mail->setFrom('lmbugua45@gmail.com', 'Lawrence');
+   
+//    $mail-> isHTML(TRUE);
+
+//    //recipient
+//    $mail->addAddress('opencubetechnologies@gmail.com');
+
+//    //subject
+//    $mail->Subject = 'New Order';
+
+//    //email body
+//    $mail->Body = "Hi, this is just a test message";
+
+//    // Send the mail.
+//    $mail->send();
+// }
+// catch (Exception $e)
+// {
+   
+//    echo $e->errorMessage();
+// }
+// catch (\Exception $e)
+// {
+//    echo $e->getMessage();
+// }
+
+// the message
+
+
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-//autoload from composeer
-require $_SERVER['DOCUMENT_ROOT'] . 'vendor/autoload.php' ;
+// If necessary, modify the path in the require statement below to refer to the
+// location of your Composer autoload.php file.
+require 'vendor/autoload.php';
 
+// Replace sender@example.com with your "From" address.
+// This address must be verified with Amazon SES.
+$sender = 'batmantheprofessor@gmail.com';
+$senderName = 'Professor Batman';
 
-if(isset($_POST['order'])){
-   
-   $fname = $_POST['fname'];
-   $lname = $_POST['lname'];
-   $email = $_POST['email'];
-   $paperType = $_POST['paperType'];
-   $unitTitle = $_POST['unitTitle'];
-   $unitCode = $_POST['unitCode'];
-   $paperFormat = $_POST['paperFormat'];
-   $preferedEnglish = $_POST['preferedEnglish'];
-   $instructions = $_POST['instructions'];
-   $sources= $_POST['sources'];
-   $pages = $_POST['pages'];
-   $topic = $_POST['topic'];
-   $subject = $_POST['subjectArea'];
-   
-   //Get the worktype
-   $workType = $_POST['workType'] == '1' ? 'Writing From Scratch' : 'Proofreading';
+// Replace recipient@example.com with a "To" address. If your account
+// is still in the sandbox, this address must be verified.
+$recipient = 'batmantheprofessor@gmail.com';
 
-   //get the correct subject
-   if( $_POST['subjectArea'] == '1'){
-      $subjectArea = 'Chemistry';
-      }
-      elseif($_POST['subjectArea'] == '2'){
-         $subjectArea = 'Computer Science'; 
-      }
-      elseif($_POST['subjectArea'] == '3'){
-         $subjectArea = 'IT'; 
-      }
-      elseif($_POST['subjectArea'] == '4'){
-         $subjectArea = 'Maths'; 
-      }
-      else{
-         $subjectArea = $_POST['subjectArea']; 
-      }
+// Replace smtp_username with your Amazon SES SMTP user name.
+$usernameSmtp = 'AKIAV6JL4IPYSWLQE7PR';
 
-   //get the correct accdemic level
-   if( $_POST['academicLevel'] == '1'){
-      $academicLevel = 'High School';
-      }
-      elseif($_POST['academicLevel'] == '2'){
-         $academicLevel = 'Undergraduate'; 
-      }
-      elseif($_POST['academicLevel'] == '3'){
-         $academicLevel = 'Masters'; 
-      }
-      elseif($_POST['academicLevel'] == '4'){
-         $academicLevel = 'PHD'; 
-      }
-      else{
-         $academicLevel = 'Undergraduate'; 
-      }
+// Replace smtp_password with your Amazon SES SMTP password.
+$passwordSmtp = 'BD31nJgmGz7bj9LjOW61bvXnXij4g/s+wbLXt3bH40hP';
 
-   //Get the spacing
-   $spacing = $_POST['spacing'] == '1' ? 'Double Spacing' : 'Single Spacing';
+// Specify a configuration set. If you do not want to use a configuration
+// set, comment or remove the next line.
+//$configurationSet = 'ConfigSet';
 
-   //get the deadline
-   if( $_POST['urgency'] == '1'){
-      $adeadline = '14 Days';
-      }
-      elseif($_POST['urgency'] == '2'){
-         $deadline = '10 Days'; 
-      }
-      elseif($_POST['urgency'] == '3'){
-         $deadline = '7 Days'; 
-      }
-      elseif($_POST['urgency'] == '4'){
-         $deadline = '5 Days'; 
-      }
-      elseif($_POST['urgency'] == '5'){
-         $deadline = '3 Days'; 
-      }
-      elseif($_POST['urgency'] == '6'){
-         $deadline = '2 Days'; 
-      }
-      elseif($_POST['urgency'] == '7'){
-         $deadline = '24 Hours'; 
-      }
-      elseif($_POST['urgency'] == '8'){
-         $deadline = '12 Hours'; 
-      }
-      else{
-         $deadline= '24 Hours'; 
-      }
+// If you're using Amazon SES in a region other than US West (Oregon),
+// replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
+// endpoint in the appropriate region.
+$host = 'email-smtp.eu-west-2.amazonaws.com';
+$port = 587;
 
-   //echo $deadline;
+// The subject line of the email
+$subject = 'AWS mail testing';
 
-$body = 'Dear Batman, <br>Below are your new order details<br>' . 'Name: ' .  $fname . ' ' .$lname . '<br>Email: ' . $email . '<br>Paper Type: ' . $paperType . '<br>Unit Title: ' . $unitTitle . '<br>Unit Code: ' . $unitCode . '<br>Paper Format: ' . $paperFormat . '<br>Preferred English: ' . $preferedEnglish. '<br>Number of Sources: ' . $sources . '<br>Pages: ' . $pages . '<br>Topic:' . $topic . '<br>Subject: ' . $subject . '<br>Instructions: ' . $instructions; 
+// The plain-text body of the email
+$bodyText =  "Just a simple test from AWS!";
 
-$mail = new PHPMailer(TRUE);
+// The HTML-formatted body of the email
+$bodyHtml = '<h1>Email Test</h1>
+    <p>This email is from aws testing!</p>';
 
-// Open the try/catch block
+$mail = new PHPMailer(true);
+
 try {
-   //sender
-   $mail->setFrom($email, $fname);
-   
-   $mail-> isHTML(TRUE);
+    // Specify the SMTP settings.
+    $mail->isSMTP();
+    $mail->setFrom($sender, $senderName);
+    $mail->Username   = $usernameSmtp;
+    $mail->Password   = $passwordSmtp;
+    $mail->Host       = $host;
+    $mail->Port       = $port;
+    $mail->SMTPAuth   = true;
+    $mail->SMTPSecure = 'tls';
+    $mail->addCustomHeader('X-SES-CONFIGURATION-SET', $configurationSet);
 
-   //recipient
-   $mail->addAddress('opencubetechnologies@gmail.com');
+    // Specify the message recipients.
+    $mail->addAddress($recipient);
+    // You can also add CC, BCC, and additional To recipients here.
 
-   //subject
-   $mail->Subject = 'New Order';
-
-   //email body
-   $mail->Body = $body;
-
-   // Send the mail.
-   //$mail->send();
-   paypal();
-}
-catch (Exception $e)
-{
-   
-   echo $e->errorMessage();
-}
-catch (\Exception $e)
-{
-   echo $e->getMessage();
-}
-   
-   
+    // Specify the content of the message.
+    $mail->isHTML(true);
+    $mail->Subject    = $subject;
+    $mail->Body       = $bodyHtml;
+    $mail->AltBody    = $bodyText;
+    $mail->Send();
+    echo "Email sent!" , PHP_EOL;
+} catch (phpmailerException $e) {
+    echo "An error occurred. {$e->errorMessage()}", PHP_EOL; //Catch errors from PHPMailer.
+} catch (Exception $e) {
+    echo "Email not sent. {$mail->ErrorInfo}", PHP_EOL; //Catch errors from Amazon SES.
 }
 
-function paypal(){
-   header('Location: ordersuccess');
-
-}
 ?>

@@ -58,7 +58,7 @@
                                     <a class="nav-link" href="order">Order Now</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="http://batmanuniversity.com">Samples</a>
+                                    <a class="nav-link" target="_blank" href="http://batmanuniversity.com">Samples</a>
                                 </li>
                             </ul>
                         </div>
