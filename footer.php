@@ -59,9 +59,11 @@
                     <div class="footer-widget-single">
                         <div class="footer-btns v3">
                             <ul>
-                                <li><a href="#"><i class="icofont-file-text"></i> ORDER NOW</a></li>
+                                <li><a href="/order"><i class="icofont-file-text"></i> ORDER
+                                        NOW</a></li>
                                 <p style="padding-left: 85px;" class="text-white">OR</p>
-                                <li><a href="#"><i class="icofont-email"></i> CONTACT US</a></li>
+                                <li><a href="/#contact-area"><i class="icofont-email"></i> CONTACT US</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -79,9 +81,14 @@
                 <div class="col-md-6">
                     <div class="footer-social v3 text-right">
                         <ul>
-                            <li><a href="#"><span><i class="icofont-email"></i></span></a></li>
-                            <li><a href="#"><span><i class="icofont-instagram"></i></span></a></li>
-                            <li><a href="#"><span><i class="icofont-twitter"></i></span></a></li>
+                            <li><a href="mailto:batmantheprofessor@gmail.com"><span><i
+                                            class=" icofont-email"></i></span></a></li>
+                            <li><a href="https://www.instagram.com/professrbatman/"><span><i
+                                            class="icofont-instagram"></i></span></a></li>
+                            <li><a href="https://twitter.com/professrbatman"><span><i
+                                            class="icofont-twitter"></i></span></a></li>
+                            <li><a href="https://twitter.com/professrbatman"><span><i
+                                            class="icofont-music-alt"></i></span></a></li>
                         </ul>
                     </div>
                 </div>

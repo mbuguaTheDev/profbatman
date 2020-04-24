@@ -11,7 +11,11 @@
                         FRIEND. BE DISCREET." <i>~RA'S AL GHUL</i><br>JUST LIKE THE BATMAN.<br>PROFESSOR BATMAN IS
                         HERE TO ANONYMOUSLY BE YOUR ACADEMIC HERO.<br>YOUR CONFIDENCE IN US IS NOT MISPLACED.</p>
                     <div class="hero-down-icons">
-                        <a href="#"><i class="icofont-instagram"></i></a><a href="#"><i class="icofont-twitter"></i></a>
+                        <a target="blank_" href="https://www.instagram.com/professrbatman/"><i
+                                class="icofont-instagram"></i></a><a target="blank_"
+                            href="https://twitter.com/professrbatman"><i class="icofont-twitter"></i></a><a
+                            target="blank_" href="https://www.tiktok.com/@writemyessaynow"><i
+                                class="icofont-music-alt"></i></a>
                     </div>
                 </div>
             </div>
@@ -351,7 +355,7 @@
                 </div>
                 <!--start contact form-->
                 <div class="contact-form v2">
-                    <form id="ajax-contact" action="#" method="post">
+                    <form action="emailer" method="post">
                         <div class="form-group">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
                                 required="required" data-error="valid email is required.">
@@ -367,7 +371,7 @@
                                 required="required" data-error="Please, leave us a message."></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" name="submit">Submit</button>
                         <div class="messages"></div>
                     </form>
                 </div>

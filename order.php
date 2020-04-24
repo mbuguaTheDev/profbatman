@@ -6,7 +6,8 @@
                 padding:10px; 
                 border-radius:10px;border:3px solid #ffd700;">
                 <h3 style="color: #fff; text-align: center;">ORDER DETAILS</h3>
-                <form id="mainCalc" action="ordersuccess" class="needs-validation" method="post">
+                <form id="mainCalc" action="ordersuccess" class="needs-validation" method="post"
+                    enctype="multipart/form-data">
                     <div class=" row">
                         <div class="col-sm">
                             <div class="form-group">
