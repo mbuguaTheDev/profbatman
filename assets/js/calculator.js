@@ -16,52 +16,55 @@ function totalPrice() {
 
   // Highschool
   if (academic == 1) {
-    if ((academic == 1 && deadline == 1) || deadline == 2 || deadline == 3) {
-      var price = 13;
+    if ((academic == 1 && deadline == 1) || deadline == 2) {
+      var price = 10;
     }
-    if ((academic == 1 && deadline == 4) || deadline == 5 || deadline == 6) {
-      var price = 14;
+    if ((academic == 1 && deadline == 3) || deadline == 4 || deadline == 5) {
+      var price = 11;
     }
-    if (academic == 1 && deadline == 7) {
-      var price = 15;
+    if ((academic == 1 && deadline == 7) || deadline == 6) {
+      var price = 12;
     }
     if (academic == 1 && deadline == 8) {
-      var price = 16;
+      var price = 13;
     }
   }
 
   // Undergraduate
   else if (academic == 2) {
-    if ((academic == 2 && deadline == 1) || deadline == 2 || deadline == 3) {
+    if (academic == 2 && deadline == 1) {
+      var price = 11;
+    }
+    if ((academic == 2 && deadline == 2) || deadline == 3) {
+      var price = 12;
+    }
+    if ((academic == 2 && deadline == 4) || deadline == 5) {
+      var price = 13;
+    }
+    if (academic == 2 && deadline == 6) {
       var price = 14;
     }
-    if (academic == 2 && deadline == 4) {
+    if (academic == 2 && deadline == 7) {
       var price = 15;
     }
-    if ((academic == 2 && deadline == 5) || deadline == 6) {
-      var price = 16;
-    }
-    if (academic == 2 && deadline == 7) {
-      var price = 18;
-    }
     if (academic == 2 && deadline == 8) {
-      var price = 20;
+      var price = 17;
     }
   }
 
   // Masters
   else if (academic == 3) {
     if ((academic == 3 && deadline == 1) || deadline == 2) {
-      var price = 25;
+      var price = 23;
     }
     if ((academic == 3 && deadline == 3) || deadline == 4 || deadline == 5) {
-      var price = 26;
+      var price = 24;
     }
     if (academic == 3 && deadline == 6) {
-      var price = 27;
+      var price = 25;
     }
     if ((academic == 3 && deadline == 7) || deadline == 8) {
-      var price = 30;
+      var price = 0;
     }
   }
 
@@ -76,13 +79,11 @@ function totalPrice() {
     if ((academic == 4 && deadline == 3) || deadline == 4) {
       var price = 34;
     }
-    if (
-      (academic == 4 && deadline == 5) ||
-      deadline == 6 ||
-      deadline == 7 ||
-      deadline == 8
-    ) {
+    if ((academic == 4 && deadline == 5) ||deadline == 6) {
       var price = 35;
+    }
+    if ((academic == 4 && deadline == 7) ||deadline == 8) {
+      var price = 0;
     }
   }
 

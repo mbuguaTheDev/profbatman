@@ -75,7 +75,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="copyright-text">
-                        <p class="text-white m-0">&copy; 2020 Professor Batman | All right reserved.</p>
+                        <p class="text-white m-0">&copy; <?php echo date('Y'); ?> Professor Batman | All rights reserved.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
