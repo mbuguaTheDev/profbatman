@@ -10,14 +10,14 @@ if (isset($_POST['submit'])) {
 $email = $_POST['email'];
 $name = $_POST['name'];
 $message = $_POST['message'];
-$sender = 'batmantheprofessor@gmail.com';
-$senderName = 'Professor Batman';
+$sender = '';
+$senderName = '';
 
 $recipient = 'batmantheprofessor@gmail.com';
 
-$usernameSmtp = 'AKIAV6JL4IPYSWLQE7PR';
-$passwordSmtp = 'BD31nJgmGz7bj9LjOW61bvXnXij4g/s+wbLXt3bH40hP';
-$host = 'email-smtp.eu-west-2.amazonaws.com';
+$usernameSmtp = '';
+$passwordSmtp = '';
+$host = '';
 $port = 587;
 
 // The subject line of the email
